@@ -1,0 +1,44 @@
+{% extends "head.html" %}
+
+{% block head %}
+	<title>Mangadex Downloader</title>
+	<meta name="description" content="Download manga from the mangadex api.">
+	<link rel="stylesheet" type="text/css" href="static/styles/index.css">
+{% endblock %}
+
+{% block body %}
+	<form method="post">
+		<header class="header-dark dark header">
+			<input type="text" name="searchbar" id="search_bar" value="Search for a manga">
+			<div class="exact_type">
+				<label>Search</label>
+				<input type="radio" name="exact_type" id="search" value="Search">
+				<br>
+				<label>Manga</label>
+				<input type="radio" name="exact_type" id="manga" value="Manga">
+				<label>Chapter</label>
+				<input type="radio" name="exact_type" id="chapter" value="Chapter">
+			</div>
+			<input type="submit" name="search_submit" value="Submit" class="search-submit">
+
+			<img src="static/img/brightness.png" class="light-img dark">
+		</header>
+		<main class="main-dark dark main">
+			<div>
+				<label>Directory</label>
+				<input type="text" name="directory" id="directory" value="this/is/an/example/directory/">
+				<br>
+				<label>Data Saver</label>
+				<input type="checkbox" name="data_saver">
+			</div>
+			
+		</main>
+	</form>
+	
+	<footer class="footer-dark dark footer">
+		<a href="https://mangadex.org/" class="dark">Manga and data scraped from Mangadex</a>
+		<br>
+		<a href="https://www.flaticon.com/free-icons/light" title="light icons" class="dark freepik">Light and Night icons created by Freepik - Flaticon</a>
+	</footer>
+	<script type="text/javascript" src="static/js/script.js"></script>
+{% endblock %}
