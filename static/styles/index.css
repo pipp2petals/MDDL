@@ -1,113 +1,24 @@
-							/* Dark mode */
-.body-dark {
-	background-color: #010409;
+/* Dark Mode */
+.body.dark {
+	background-color: #202020;
 }
 
-.header-dark, .footer-dark, .main-dark {
-	background-color: #3d3d3d;
+*.dark {
+	color: yellow;
 }
 
-.light-img, .dark-img {
-	height: 40px;
+/* Light Mode */
+.body.light {
+	background-color: white;
 }
 
-.dark {
-	color: #ffff66;
-}
-
-a.dark {
-	color: #ffd1e4;
-	font-size: 14px;
-}
-
-							/* Light mode */
-.body-light {
-	background-color: #f0f0f0;
-}
-
-.header-light, .footer-light, .main-light {
-	background-color: #f9f9f9;
-}
-
-.light {
-	color: #313639;
-}
-
-a.light {
-	color: blue;
-	font-size: 14px;
-}
-
-							/* Background */
+/* Background */
 * {
 	margin: 0;
 }
 
-							/* Foreground */
 
-.header, .footer {
-	height: 75px;
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-.main {
-	height: auto;
-	min-height: 760px;
-	margin-bottom: 10px;
-}
-
-.footer {
-	margin-bottom: 0;
-}
-
-
-							/* Objects */
-.light-img, .dark-img {
-	position: absolute;
-	right: 0;
-	margin-right: 30px;
-	margin-top: 15px;
-}
-
-#search_bar {
-	margin-left: 20px;
-	margin-top: 15px;
-	height: 40px;
-	font-size: 20px;
-	border-radius: 10px;
-}
-
-#search_bar {
-	width: 35%;
-}
-
-#exact_search {
-	width: 15%;
-}
-
-.search-submit {
-	border: 0;
-	height: 40px;
-}
-
-.exact_type {
-	display: inline-block;
-}
-
-#manga {
-	margin-left: 20px;
-}
-
-#search {
-	margin-left: 19px;
-}
-
-#chapter {
-	margin-left: 10px;
-}
-
-#directory {
-	height: 30px;
-	font-size: 15px;
+/* Main */
+.sun-moon {
+	height: 64px;
 }

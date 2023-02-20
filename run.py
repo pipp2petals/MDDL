@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request
 
-from get_chapter import get_chapter
+from pyscripts.chapter import Chapter
 
 app = Flask(__name__)
 
@@ -8,17 +8,16 @@ app = Flask(__name__)
 def home():
 	if request.method == "POST":
 		print(request.form)
-		if request.form["exact_type"] == "Search":
-			print("Search for a manga. Redirect to search page.")
-		elif request.form["exact_type"] == "Manga":
-			print("Download manga.")
-		elif request.form["exact_type"] == "Chapter":
-			chapter = get_chapter(request.form["searchbar"])
-			if "data_saver" in request.form:
-				chapter_data = chapter["chapter"]["dataSaver"]
-			else:
-				chapter_data = chapter["chapter"]["data"]
-
+		if "SearchBar" in request.form:
+			if request.form["SearchValues"] == "chapter":
+				chapter = Chapter(request.form["SearchBar"])
+				data_saver = "DataSaver" in request.form
+				if "Directory" in request.form:
+					download = request.form["Directory"]
+				else:
+					download = "download/"
+				chapter.get_chapter(data_saver)
+				chapter.download_pages(download)
 			
 	return render_template("index.html")
 

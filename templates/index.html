@@ -8,37 +8,41 @@
 
 {% block body %}
 	<form method="post">
-		<header class="header-dark dark header">
-			<input type="text" name="searchbar" id="search_bar" value="Search for a manga">
-			<div class="exact_type">
-				<label>Search</label>
-				<input type="radio" name="exact_type" id="search" value="Search">
-				<br>
-				<label>Manga</label>
-				<input type="radio" name="exact_type" id="manga" value="Manga">
-				<label>Chapter</label>
-				<input type="radio" name="exact_type" id="chapter" value="Chapter">
+		<header class="dark header">
+			<div class="dark search-bar">
+				<input type="text" name="SearchBar" id="search_bar" placeholder="Search the name or id of the manga/chapter.">
 			</div>
-			<input type="submit" name="search_submit" value="Submit" class="search-submit">
 
-			<img src="static/img/brightness.png" class="light-img dark">
-		</header>
-		<main class="main-dark dark main">
+			<div class="dark search-options">
+				<label class="chapter-label">Chapter</label>
+				<input type="radio" name="SearchValues" id="chapter" checked="checked" value="chapter">
+			</div>
+
 			<div>
-				<label>Directory</label>
-				<input type="text" name="directory" id="directory" value="this/is/an/example/directory/">
+				<input type="submit" name="SearchButton" id="search_button" value="Search">
+			</div>
+
+			<img src="static/img/brightness.png" class="dark sun-moon">
+		</header>
+
+
+		<main class="dark main">
+			<div class="dark chapter-options">
+				<label class="directory-label">Directory</label>
+				<input type="text" name="Directory" id="directory" placeholder="this/is/an/example/">
 				<br>
-				<label>Data Saver</label>
-				<input type="checkbox" name="data_saver">
+				<label class="data-saver-label">Data Saver</label>
+				<input type="checkbox" name="DataSaver" id="data_saver">
 			</div>
 			
 		</main>
 	</form>
 	
-	<footer class="footer-dark dark footer">
-		<a href="https://mangadex.org/" class="dark">Manga and data scraped from Mangadex</a>
-		<br>
-		<a href="https://www.flaticon.com/free-icons/light" title="light icons" class="dark freepik">Light and Night icons created by Freepik - Flaticon</a>
+
+
+	<footer class="dark footer">
 	</footer>
+
+
 	<script type="text/javascript" src="static/js/script.js"></script>
 {% endblock %}
