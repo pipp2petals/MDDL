@@ -9,30 +9,40 @@
 {% block body %}
 	<form method="post">
 		<header class="dark header">
+			<img src="static/img/brightness.png" class="dark sun-moon">
+
 			<div class="dark search-bar">
 				<input type="text" name="SearchBar" id="search_bar" placeholder="Search the name or id of the manga/chapter.">
 			</div>
 
-			<div class="dark search-options">
-				<label class="chapter-label">Chapter</label>
-				<input type="radio" name="SearchValues" id="chapter" checked="checked" value="chapter">
-			</div>
-
-			<div>
+			<div class="dark">
 				<input type="submit" name="SearchButton" id="search_button" value="Search">
 			</div>
 
-			<img src="static/img/brightness.png" class="dark sun-moon">
+			<br>
+
+			<div class="dark search-options">
+				<label class="dark chapter-label">Chapter</label>
+				<input type="radio" name="SearchValues" id="chapter" checked="checked" value="chapter">
+			</div>
 		</header>
 
 
 		<main class="dark main">
 			<div class="dark chapter-options">
-				<label class="directory-label">Directory</label>
-				<input type="text" name="Directory" id="directory" placeholder="this/is/an/example/">
-				<br>
-				<label class="data-saver-label">Data Saver</label>
-				<input type="checkbox" name="DataSaver" id="data_saver">
+				<div class="dark float-left">
+					<label class="directory-label">Directory</label>
+					<input type="text" name="Directory" id="directory" placeholder="this/is/an/example/">
+					<br>
+					<label class="data-saver-label">Data Saver</label>
+					<input type="checkbox" name="DataSaver" id="data_saver">
+					<br>
+				</div>
+				
+			</div>
+			<div class="dark information-block">
+				<h3 class="project-title">Mangadex Downloader</h3>
+				<a href="https://github.com/pipp2petals" class="dark pipp2petals">Made by Neko</a>
 			</div>
 			
 		</main>
@@ -41,6 +51,7 @@
 
 
 	<footer class="dark footer">
+
 	</footer>
 
 

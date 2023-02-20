@@ -1,16 +1,17 @@
 /* Dark Mode */
-.body.dark {
+.body.dark, .main {
 	background-color: #202020;
+}
+
+.header, .footer, .main div {
+	background-color: #3a3a3a;
 }
 
 *.dark {
 	color: yellow;
 }
 
-/* Light Mode */
-.body.light {
-	background-color: white;
-}
+
 
 /* Background */
 * {
@@ -18,7 +19,92 @@
 }
 
 
+
+/* Foreground */
+.header, .main, .footer {
+	width: 100%;
+}
+
+.header, .main {
+	margin-bottom: 15px;
+}
+
+.header, .footer {
+	height: 100px;
+}
+
+.search-options {
+	margin-left: 20px;
+}
+
+.main, .chapter-options, .information-block {
+	min-height: 300px;
+}
+
+.chapter-options, .information-block {
+	display: inline-block;
+}
+
+.chapter-options {	
+	margin-left: 10px;
+	margin-right: 5px;
+	width: 75%;
+}
+
+.information-block {
+	float: right;
+	width: 20%;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+}
+
+
+
 /* Main */
+.header div {
+	display: inline-block;
+}
+
+#search_bar {
+	height: 50px;
+	width: 300px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 25px;
+}
+
+#search_button {
+	height: 35px;
+	width: 75px;
+	margin-right: 10px;
+}
+
 .sun-moon {
 	height: 64px;
+	margin-top: 15px;
+	margin-right: 20px;
+	float: right;
+}
+
+div.float-left, div.float-right {
+	display: inline-block;
+}
+
+div.float-left {
+	float: left;
+}
+
+div.float-right {
+	float: right;
+}
+
+.project-title, .pipp2petals {
+	text-align: center;
+	display: block;
 }

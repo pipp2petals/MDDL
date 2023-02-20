@@ -24,9 +24,7 @@ class Chapter:
 		os.makedirs(directory, exist_ok=True)
 
 		for index, page in enumerate(self.pages):
-			if str(index + 1) + "." + page.split(".")[-1] in os.listdir(directory):
-				pass
-			else:
+			if str(index + 1) + "." + page.split(".")[-1] not in os.listdir(directory):
 				url = self.host + "/data/" + self.chapter_hash + "/" + page
 				image = requests.get(url)
 				with open(directory + "/" + str(index + 1) + "." + page.split(".")[-1], "wb") as image_file:
