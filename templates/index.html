@@ -22,8 +22,10 @@
 			<br>
 
 			<div class="dark search-options">
+				<label class="dark manga-label">Manga</label>
+				<input type="radio" name="SearchValues" id="manga" checked="checked" value="manga">
 				<label class="dark chapter-label">Chapter</label>
-				<input type="radio" name="SearchValues" id="chapter" checked="checked" value="chapter">
+				<input type="radio" name="SearchValues" id="chapter" value="chapter">
 			</div>
 		</header>
 
@@ -37,21 +39,49 @@
 					<label class="data-saver-label">Data Saver</label>
 					<input type="checkbox" name="DataSaver" id="data_saver">
 					<br>
+					<label class="language-label">Languages</label>
+					<br>
+					<div class="languages">
+						<label class="dark en-label lang-label">English</label>
+						<input type="checkbox" name="en" id="en" value="en">
+
+						<label class="dark ar-label lang-label">Arabic</label>
+						<input type="checkbox" name="ar" id="ar" value="ar">
+
+						<label class="dark az-label lang-label">Azerbaijani</label>
+						<input type="checkbox" name="az" id="az" value="az">
+
+						<label class="dark bn-label lang-label">Bengali</label>
+						<input type="checkbox" name="bn" id="bn" value="bn">
+
+						<label class="dark bg-label lang-label">Bulgarian</label>
+						<input type="checkbox" name="bg" id="bg" value="bg">
+
+						<label class="dark my-label lang-label">Burmese</label>
+						<input type="checkbox" name="my" id="my" value="my">
+					</div>
+					<br>
 				</div>
-				
+				<!-- <div class="dark float-right">
+					<a href="https://mangadex.org" class="dark mangadex-link">Mangadex</a>
+					<br>
+					<a href="" class="dark manga-name">
+						{{ manga }}
+					</a>
+					<br>
+					<a href="" class="dark chapter-label">{{ chapter }}</a>
+					<br>
+					<a href="" class="dark scanlator-label">{{ scanlator }}</a>
+				</div> -->
 			</div>
-			<div class="dark information-block">
-				<h3 class="project-title">Mangadex Downloader</h3>
-				<a href="https://github.com/pipp2petals" class="dark pipp2petals">Made by Neko</a>
-			</div>
-			
 		</main>
 	</form>
 	
 
 
 	<footer class="dark footer">
-
+		<h3 class="project-title">Mangadex Downloader</h3>
+		<a href="https://github.com/pipp2petals" class="dark pipp2petals">Made by Neko</a>
 	</footer>
 
 

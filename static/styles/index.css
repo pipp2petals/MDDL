@@ -37,25 +37,18 @@
 	margin-left: 20px;
 }
 
-.main, .chapter-options, .information-block {
+.main, .chapter-options {
 	min-height: 300px;
+	height: auto;
 }
 
-.chapter-options, .information-block {
+.chapter-options {
 	display: inline-block;
 }
 
 .chapter-options {	
-	margin-left: 10px;
-	margin-right: 5px;
-	width: 75%;
-}
-
-.information-block {
-	float: right;
-	width: 20%;
-	margin-right: 10px;
-	margin-left: 5px;
+	margin-left: 5%;
+	width: 90%;
 }
 
 .footer {

@@ -17,7 +17,7 @@ class Chapter:
 		else:
 			self.pages = self.chapter_json["chapter"]["data"]
 		print("Obtaining chapter.")
-		# time.sleep(20)
+		time.sleep(20)
 		print("Chapter obtained.")
 
 	def download_pages(self, directory="download/"):
@@ -30,4 +30,4 @@ class Chapter:
 				with open(directory + "/" + str(index + 1) + "." + page.split(".")[-1], "wb") as image_file:
 					image_file.write(image.content)
 				time.sleep(10)
-				print("Page " + str(index + 1) + " of " + str(len(self.pages)))
+				print("Page " + str(index + 1) + " of " + str(len(self.pages)), self.chapter_id)
